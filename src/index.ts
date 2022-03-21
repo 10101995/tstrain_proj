@@ -29,11 +29,11 @@ let i = 0;
 
 const increment = (e: Event) => {
     e.preventDefault()
-    i+=5
     const span = compteur?.querySelector('span')
     if (span){
         span.innerText = i.toString();
     }
+    i+=5
 }
 
 compteur?.addEventListener('click', increment)
