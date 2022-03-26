@@ -22,18 +22,17 @@
 //     console.log(id.toString())
 // }
 // printId(3)
-
 const compteur = document.querySelector('#compteur')
 
-let i = 0;
+let i = 0
 
 const increment = (e: Event) => {
     e.preventDefault()
     const span = compteur?.querySelector('span')
     if (span){
-        span.innerText = i.toString();
+        span.innerText = i.toString()
     }
-    i+=5
+    i+=1
 }
 
 compteur?.addEventListener('click', increment)
